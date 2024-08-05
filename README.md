@@ -31,3 +31,11 @@
 
  ### ECU Layer
  The ECU layer contains drivers for various hardware components used in embedded systems.
+
+ + 7_segment: Driver for 7-segment displays.
+  + button: Driver for push-button inputs.
+  + dc_motor: Driver for DC motor control.
+  + keypad: Driver for keypad input.
+  + lcd: Driver for LCD display modules.
+  + led: Driver for controlling LEDs.
+  + relay: Driver for relay control.
