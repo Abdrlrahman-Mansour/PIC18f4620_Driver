@@ -14,3 +14,16 @@
   + lcd
   + led
   + relay
++ MCAL_Layer
++ ADC
++ CCP
++ EEPROM
++ GPIO
++ I2C
++ interrupt
++ SPI
++ TIMER0
++ TIMER1
++ TIMER2
++ TIMER3
++ USART
