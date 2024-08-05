@@ -1,6 +1,5 @@
 # PIC18F4620 MCU Implementation
 
----
 
 ## Overview
 
@@ -69,4 +68,32 @@ To get started with this project, follow these steps:
 4. **Configure the Microcontroller**: Set the configuration bits according to your requirements. This includes oscillator settings, watchdog timer settings, etc.
 5. **Write Your Application Code**: Utilize the drivers provided in the ECU and MCAL layers to write your application code.
 6. **Build and Upload**:  Build your project and upload the hex file to the PIC18F4620 microcontroller using a suitable programmer/debugger.
-  
+
+## Usage
+
+Each module comes with its own header and source files. Include the necessary headers in your application code and call the functions provided by the modules to control the hardware peripherals.
+
+Example for initializing and using the SPI module:
+
+#include "MCAL_Layer/SPI/hal_spi.h"
+
+SPI_Config spi = {
+    .spi_mode = SPI_MASTER_FOSC_DIV4,
+    .spi_config.ClockPolarity = SPI_IDLE_STATE_LOW_LEVEL,
+    .spi_config.ClockSelect = SPI_TRANSMIT_IDLE_TO_ACTIVE,
+    .spi_config.SampleSelect = SPI_DATA_SAMPLE_MIDDLE,
+    .MSSP_SPI_InterruptHandler = NULL,
+};
+
+void setup(void) {
+    SPI_Init(&spi);
+}
+
+int main(void) {
+    setup();
+    while (1) {
+        SPI_Send_Byte(&spi, 0x30);
+        __delay_ms(100);
+    }
+    return 0;
+}
