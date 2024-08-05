@@ -59,3 +59,13 @@ The MCAL layer provides abstraction for the microcontroller's hardware periphera
   + TIMER3: Timer3 module driver.
   + USART: Universal Synchronous/Asynchronous Receiver/Transmitter driver.
   ----
+## Getting Started
+
+To get started with this project, follow these steps:
+1. **Set Up Your Development Environment**: Ensure you have the necessary tools and software installed, such as MPLAB X IDE and the XC8 compiler.
+2. **Clone the Repository**: Clone the repository to your local machine.
+3. **Open the Project**: Open the project in MPLAB X IDE.
+4. **Configure the Microcontroller**: Set the configuration bits according to your requirements. This includes oscillator settings, watchdog timer settings, etc.
+5. **Write Your Application Code**: Utilize the drivers provided in the ECU and MCAL layers to write your application code.
+6. **Build and Upload**:  Build your project and upload the hex file to the PIC18F4620 microcontroller using a suitable programmer/debugger.
+  
