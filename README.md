@@ -27,5 +27,7 @@
   + TIMER2
   + TIMER3
   + USART
- ---
+
+
  ### ECU Layer
+ The ECU layer contains drivers for various hardware components used in embedded systems.
