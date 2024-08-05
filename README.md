@@ -74,7 +74,7 @@ To get started with this project, follow these steps:
 Each module comes with its own header and source files. Include the necessary headers in your application code and call the functions provided by the modules to control the hardware peripherals.
 
 Example for initializing and using the SPI module:
-
+``` C
 #include "MCAL_Layer/SPI/hal_spi.h"
 
 SPI_Config spi = {
@@ -97,3 +97,4 @@ int main(void) {
     }
     return 0;
 }
+```
