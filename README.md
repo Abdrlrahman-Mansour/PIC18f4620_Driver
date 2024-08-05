@@ -2,12 +2,12 @@
 
 ---
 
-### Overview
+## Overview
 
 
 ###### This project demonstrates the implementation of various peripherals and modules using the PIC18F4620 microcontroller. The project is organized into two main layers: the ECU (Electronic Control Unit) Layer and the MCAL (Microcontroller Abstraction Layer). Each layer contains multiple modules that provide functionality for different hardware components and communication protocols.
----
-### Directory Structure
+
+## Directory Structure
 + ECU_Layer
   + 7_segment
   + button
@@ -29,10 +29,10 @@
   + TIMER2
   + TIMER3
   + USART
-___
 
 
- ### ECU Layer
+
+ ## ECU Layer
  
  The ECU layer contains drivers for various hardware components used in embedded systems.
 
@@ -43,8 +43,8 @@ ___
   + lcd: Driver for LCD display modules.
   + led: Driver for controlling LEDs.
   + relay: Driver for relay control.
-***
- ### MCAL Layer
+
+ ## MCAL Layer
 The MCAL layer provides abstraction for the microcontroller's hardware peripherals. This layer allows easy access and control of the microcontroller's built-in functionalities.
 
   + ADC: Analog-to-Digital Converter driver.
@@ -59,7 +59,7 @@ The MCAL layer provides abstraction for the microcontroller's hardware periphera
   + TIMER2: Timer2 module driver.
   + TIMER3: Timer3 module driver.
   + USART: Universal Synchronous/Asynchronous Receiver/Transmitter driver.
-  ----
+
 ## Getting Started
 
 To get started with this project, follow these steps:
